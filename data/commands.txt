@@ -1,0 +1,3 @@
+**** Run frpom data project (folder)
+dotnet ef migrations add <MigrationName> -s "..\webapp\webapp.csproj" -c data.HildegaardDBContext -v
+dotnet ef database update -s "..\webapp\webapp.csproj" -c data.HildegaardDBContext

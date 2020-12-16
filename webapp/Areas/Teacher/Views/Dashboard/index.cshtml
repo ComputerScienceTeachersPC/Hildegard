@@ -1,0 +1,16 @@
+@model IEnumerable<data.Models.SetClass>
+@{
+    
+    ViewData["Title"] = "Dashboard";
+}
+
+<div id="dashboard_wrapper">
+    <h1 class="display-4">Dashboard</h1>
+    
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Name - @item.Reference</li>
+        }
+    </ul>
+</div>
